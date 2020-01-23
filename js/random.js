@@ -1,4 +1,9 @@
-
+/*
+    Psudeorandom Number Generator
+    http://web.mit.edu/freebsd/head/sys/libkern/random.c
+    
+    Javascript port by Kim Justin B. Labalan
+*/
 String.prototype.hashCode = function () {
     for(var i = 0, h = 0; i < this.length; i++)
         h = Math.imul(31, h) + this.charCodeAt(i) | 0;

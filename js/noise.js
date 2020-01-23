@@ -1,3 +1,10 @@
+/*
+	Kenneth Perlin's 2002 Improved Noise
+	https://mrl.nyu.edu/~perlin/noise/
+	
+	Javascript Port by Kim Justin B. Labalan
+*/
+
 var Noise = Noise || {};
 Noise.p = [];
 
