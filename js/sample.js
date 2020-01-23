@@ -148,11 +148,11 @@ function draw (offset_x = 0., offset_y = 0., scale = 1.)
             if (document.getElementsByName("view")[0].checked)
             {
                 if (temp < 16)
-                    context.fillStyle = getTerrain(climates[1], land);
+                    context.fillStyle = getTerrain(climates[0], land);
                 else if (temp < 96)
                     context.fillStyle = getTerrain(climates[1], land);
                 else if (temp < 192)
-                    context.fillStyle = getTerrain(climates[1], land);
+                    context.fillStyle = getTerrain(climates[2], land);
             }
             if (document.getElementsByName("view")[2].checked)
             {
