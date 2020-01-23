@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Perlin Noise</title>
+        <meta charset="utf-8"></meta>
+        <meta name="description" content="Kenneth Perlin's 2002 Improved Noise in Javascript."></meta>
+        <meta name="keywords" content="perlin, improved, noise, perlin noise, kenneth perlin, javascript"></meta>
+        <meta name="author" content="Kim Justin"></meta>
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
+        <link rel="stylesheet" type="text/css" href="css/index.css"></link>
+    </head>
+    <script type="text/javascript" charset="utf-8" src="
+    http://davidbau.com/encode/seedrandom.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/random.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/noise.js"></script>
+    <body>
+        <b>Seed Settings</b></br>
+        Seed <input type="text" id="seed" value=""/> </br> 
+        Seed ID: <i id="seedid"></i></br>
+        <button onclick="newSeed()">Generate</button>
+        <button onclick="newRandomSeed()">Random Seed</button></br>
+        <b>Canvas Size</b></br>
+        W <input type="text" id="width" value="256" /> 
+        H <input type="text" id="height" value="256" /> </br>
+        <b>Geoanalyzer</b></br>
+        Pixels<input type="text" id="geo-pixels" value="8" /> </br>
+        <b>View Mode</b></br>
+        <input type="radio" name="view" value="terraform" checked=true/> Terraform 
+        <input type="radio" name="view" value="height"/> Heightmap
+        <input type="radio" name="view" value="climate"/> Climate</br>
+        <b>Noise Motion</b></br>
+        X <input type="text" id="offset-x" value="0.0" /> 
+        Y <input type="text" id="offset-y"value="0.0" /> </br>
+        Scale <input type="text" id="scale" value="1.0" /> </br>
+        <button onclick="updateCanvas()">Update</button></br>
+    </body>
+    <script type="text/javascript" charset="utf-8" src="js/world.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/sample.js"></script>
+</html>
